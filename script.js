@@ -46,6 +46,51 @@ const boissons = [
     "Alcools"
 ];
 
+const prixBoissons = {
+    "Eau plate / Eau gazeuse": 2.5,
+    "Coca-Cola / Coca-Cola Zéro": 3.5,
+    "Fanta Orange": 3.5,
+    "Sprite": 3.5,
+    "Schweppes Tonic": 3.5,
+    "Schweppes Agrum'": 3.5,
+    "Ice Tea Pêche": 3.5,
+    "Red Bull": 4.5,
+    "Jus d'orange": 3.5,
+    "Jus d'ananas": 3.5,
+    "Jus de cranberry": 3.5,
+    "Jus de pomme": 3.5,
+    "Limonade": 3.5,
+    "Diabolo": 3.5,
+    "Mojito": 12,
+    "Caipirinha": 12,
+    "Sex on the Beach": 12,
+    "Piña Colada": 12,
+    "Gin Fizz": 12,
+    "Vodka Smirnoff": 10,
+    "Vodka Grey Goose": 14,
+    "Vodka Belvedere": 14,
+    "Rhum Bacardi Carta Blanca": 10,
+    "Rhum Havana Club 3 ans": 10,
+    "Rhum Diplomatico Reserva": 14,
+    "Gin Bombay Sapphire": 12,
+    "Gin Hendrick's": 14,
+    "Whisky J&B": 10,
+    "Whisky Jameson": 10,
+    "Whisky Jack Daniel's": 12,
+    "Whisky Chivas Regal 12 ans": 14,
+    "Tequila Jose Cuervo Especial": 10,
+    "Tequila Don Julio Blanco": 14,
+    "Get 27 / Get 31": 8,
+    "Verre de Soft": 5,
+    "Verre de Vin": 6,
+    "Coupe de Champagne": 15,
+    "Verre d'Alcool": 10,
+    "Cocktail": 18,
+    "Shot": 5,
+    "Softs (1L)": 15,
+    "Alcools": 130
+};
+
 let entrees = 0;
 
 function login() {
