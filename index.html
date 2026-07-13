@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion Bar Galacumba</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loginPage" class="container">
+    <h1>Gestion Bar Galacumba</h1>
+
+    <input type="text" id="username" placeholder="Identifiant">
+    <input type="password" id="password" placeholder="Mot de passe">
+
+    <button onclick="login()">Connexion</button>
+</div>
+
+<div id="homePage" class="container hidden">
+    <h1>Accueil</h1>
+
+    <button onclick="showCreate()">Créer un rapport</button>
+    <button onclick="showReports()">Voir les rapports</button>
+</div>
+
+<div id="createPage" class="container hidden">
+
+    <button class="homeBtn" onclick="goHome()">🏠 Accueil</button>
+
+    <h2>Créer un rapport</h2>
+
+    <input type="text" id="nom" placeholder="Nom et prénom">
+    <input type="text" id="date" placeholder="JJ/MM/AAAA">
+
+    <h3>Ventes</h3>
+
+    <div id="ventes"></div>
+
+    <h3>Entrées</h3>
+
+    <div class="entrees">
+        <button onclick="modifierEntrees(-1)">-</button>
+        <span id="nbEntrees">0</span>
+        <button onclick="modifierEntrees(1)">+</button>
+    </div>
+
+    <h3>Classement</h3>
+
+    <ol id="classement">
+        <li>-</li>
+        <li>-</li>
+        <li>-</li>
+    </ol>
+
+    <button onclick="enregistrerRapport()">Enregistrer</button>
+</div>
+
+<div id="reportsPage" class="container hidden">
+
+    <button class="homeBtn" onclick="goHome()">🏠 Accueil</button>
+
+    <h2>Rapports</h2>
+
+    <div id="listeRapports"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
