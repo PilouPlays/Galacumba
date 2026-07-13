@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Gestion Bar Galacumba</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Gestion Bar Galacumba</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div id="loginPage" class="container">
+<div id="loginPage" class="page">
     <h1>Gestion Bar Galacumba</h1>
 
-    <input type="text" id="username" placeholder="Identifiant">
-    <input type="password" id="password" placeholder="Mot de passe">
+    <input id="username" placeholder="Identifiant">
+    <input id="password" type="password" placeholder="Mot de passe">
 
     <button onclick="login()">Connexion</button>
 </div>
 
-<div id="homePage" class="container hidden">
+<div id="homePage" class="page hidden">
     <h1>Accueil</h1>
 
-    <button onclick="showCreate()">Créer un rapport</button>
-    <button onclick="showReports()">Voir les rapports</button>
+    <button onclick="nouveauRapport()">Créer un rapport</button>
+    <button onclick="voirRapports()">Voir les rapports</button>
 </div>
 
-<div id="createPage" class="container hidden">
+<div id="createPage" class="page hidden">
 
-    <button class="homeBtn" onclick="goHome()">🏠 Accueil</button>
+    <button onclick="accueil()">🏠 Accueil</button>
 
-    <h2>Créer un rapport</h2>
+    <h2>Rapport</h2>
 
-    <input type="text" id="nom" placeholder="Nom et prénom">
-    <input type="text" id="date" placeholder="JJ/MM/AAAA">
+    <input id="nom" placeholder="Nom et prénom">
+    <input id="date" placeholder="JJ/MM/AAAA">
 
     <h3>Ventes</h3>
 
@@ -38,11 +38,9 @@
 
     <h3>Entrées</h3>
 
-    <div class="entrees">
-        <button onclick="modifierEntrees(-1)">-</button>
-        <span id="nbEntrees">0</span>
-        <button onclick="modifierEntrees(1)">+</button>
-    </div>
+    <button onclick="modifierEntrees(-1)">-</button>
+    <span id="nbEntrees">0</span>
+    <button onclick="modifierEntrees(1)">+</button>
 
     <h3>Classement</h3>
 
@@ -55,13 +53,21 @@
     <button onclick="enregistrerRapport()">Enregistrer</button>
 </div>
 
-<div id="reportsPage" class="container hidden">
+<div id="reportsPage" class="page hidden">
 
-    <button class="homeBtn" onclick="goHome()">🏠 Accueil</button>
+    <button onclick="accueil()">🏠 Accueil</button>
 
     <h2>Rapports</h2>
 
     <div id="listeRapports"></div>
+</div>
+
+<div id="consultPage" class="page hidden">
+
+    <button onclick="voirRapports()">⬅ Retour</button>
+
+    <div id="contenuRapport"></div>
+
 </div>
 
 <script src="script.js"></script>
